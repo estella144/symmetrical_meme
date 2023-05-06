@@ -15,8 +15,12 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import hashlib
+import getpass
 import json
 import uuid
+import warnings
+
+ESC = chr(27)
 
 def generate_hash(password, verify=False, salt=None):
 
@@ -42,3 +46,35 @@ def verify_password(input_password, correct_hash, salt):
         return True
     else:
         return False
+
+def login():
+
+    """Logs in a user."""
+
+    warnings.filterwarnings("error")
+
+    print("Allied Islands Resource Management System")
+    print("Version 0.0a0")
+    print("Welcome. Please log in to continue.")
+    print()
+
+    username = input("Username: ")
+    try:
+        password = getpass.getpass(prompt="Password: ")
+    except getpass.GetPassWarning:
+        print(f"{ESC}[37,41m[L1] Password entry is not secure. The program cannot continue.")
+        input(f"Press Enter to quit{ESC}[0m")
+        quit()
+
+    # Load hash and salt here from file
+
+    correct_hash = "5b1fed2bf51dea75e9bc2c6efd76a470b7d9a1f0b3ab44fb2a601546db3be1b4"
+    salt = "a41d4fa8a55c416f93b94245ae6abcef"
+
+    if verify_password(input_password, correct_hash, salt):
+        print()
+        print(f"Welcome, {username}")
+    else:
+        print()
+
+login()
