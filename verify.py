@@ -71,7 +71,7 @@ def login():
     correct_hash = "5b1fed2bf51dea75e9bc2c6efd76a470b7d9a1f0b3ab44fb2a601546db3be1b4"
     salt = "a41d4fa8a55c416f93b94245ae6abcef"
 
-    if verify_password(input_password, correct_hash, salt):
+    if verify_password(password, correct_hash, salt):
         print()
         print(f"Welcome, {username}")
     else:
