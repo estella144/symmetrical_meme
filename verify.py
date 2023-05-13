@@ -68,8 +68,8 @@ def login():
 
     # Load hash and salt here from file
 
-    correct_hash = "5b1fed2bf51dea75e9bc2c6efd76a470b7d9a1f0b3ab44fb2a601546db3be1b4"
-    salt = "a41d4fa8a55c416f93b94245ae6abcef"
+    correct_hash = "c8c091427b033146202fec00a39cdd72b1c836fe8e3a19dfb44ac2c06fb4c988"
+    salt = "568083a12c40495db6a6355ea6e3ed71"
 
     if verify_password(password, correct_hash, salt):
         print()
