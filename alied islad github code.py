@@ -15,5 +15,5 @@ while True:
             print (original_population)
             #return to find menu
     else:
-        print ("invalid request")
+        print ("Invalid request")
 
