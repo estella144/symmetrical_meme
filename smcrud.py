@@ -1,6 +1,6 @@
 # This file is part of Symmetrical Meme
 # A task management application in Python
-# v0.1.dev2 (2 Sep 2023, main/857f324)
+# v0.1.dev4 (2 Sep 2023, main/2187db3)
 
 # Summary:
 # A Python CLI task management application
@@ -10,8 +10,16 @@ import os
 import csv
 import sys
 import logging
+from datetime import datetime
 
 DATA_FILE = "data/tasks.csv"
+
+# ANSI color codes for colour-coding of tasks
+
+GREEN = '\033[92m'
+YELLOW = '\033[93m'
+RED = '\033[91m'
+RESET = '\033[0m'  # Reset color to default
 
 # Logging setup
 logging.basicConfig(filename="logs/sm.log", level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -31,7 +39,28 @@ def add_task(title, description, due_date, priority):
         print(f"An error occurred: {str(e)}")
         logging.error(f"An error occured while adding task: {str(e)}")
 
-# Function to list tasks
+def print_task_list(tasks, show_reminders):
+    """Function to print task list."""
+    logging.info("Tasks found, listing tasks")
+    print("Task List:")
+    today = datetime.today().date()
+    reminder_threshold = today + timedelta(days=1)
+
+    for index, task in enumerate(tasks):
+    due_date = datetime.strptime(task[2], '%Y-%m-%d').date()
+    if due_date < today:
+        print(f"{index + 1}. Title: {RED}{task[0]}{RESET}, Description: {task[1]}, Due Date: {task[2]}, Priority: {task[3]}")
+        if show_reminders:
+            print(f"{RED}   Reminder: Task '{task[0]}' is overdue!")
+    elif due_date == today:
+        print(f"{index + 1}. Title: {YELLOW}{task[0]}{RESET}, Description: {task[1]}, Due Date: {task[2]}, Priority: {task[3]}")
+        if show_reminders:
+            print(f"{YELLOW}   Reminder: Task '{task[0]}' is due today!")
+    else:
+        print(f"{index + 1}. Title: {GREEN}{task[0]}{RESET}, Description: {task[1]}, Due Date: {task[2]}, Priority: {task[3]}")
+        if show_reminders and today <= due_date <= reminder_threshold:
+            print(f"{YELLOW}   Reminder: Task '{task[0]}' is due soon!")
+
 def list_tasks(sort_by_due_date=False, sort_by_priority=False):
     """Function to list tasks, with optional sorting."""
     logging.info("Adding task, attempting to open file")
@@ -43,17 +72,14 @@ def list_tasks(sort_by_due_date=False, sort_by_priority=False):
             logging.debug("File read successfully")
 
         if sort_by_due_date:
-            tasks.sort(key=lambda x: x[2])  # Sort by due date
+            tasks.sort(key=lambda x: datetime.strptime(x[2], '%Y-%m-%d'))  # Sort by due date
             logging.debug("Tasks sorted by due date")
         elif sort_by_priority:
             tasks.sort(key=lambda x: x[3], reverse=True) # Sort by priority
             logging.debug("Tasks sorted by priority")
 
         if tasks:
-            logging.info("Tasks found, listing tasks")
-            print("Task List:")
-            for index, task in enumerate(tasks):
-                print(f"{index + 1}. Title: {task[0]}, Description: {task[1]}, Due Date: {task[2]}, Priority: {task[3]}")
+            print_task_list(tasks)
             logging.info("Tasks listed successfully")
         else:
             logging.info("No tasks found, success")
