@@ -1,6 +1,6 @@
 # This file is part of Symmetrical Meme
 # A task management application in Python
-# v0.1.dev4 (2 Sep 2023, main/2187db3)
+# v0.1 (2 Sep 2023, main/2187db3)
 
 # Summary:
 # A Python CLI task management application
