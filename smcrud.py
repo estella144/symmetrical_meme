@@ -13,6 +13,7 @@ import logging
 from datetime import datetime, timedelta
 
 DATA_FILE = os.path.join(os.getcwd(), "data/tasks.csv")
+print(DATA_FILE)
 
 # ANSI color codes for colour-coding of tasks
 
