@@ -8,15 +8,15 @@
 
 import tkinter as tk
 from tkinter import messagebox
-from smgui_interface import add_task_gui, list_tasks_gui
+from smgui_interface import add_task, list_tasks
 
 # Create the main application window
 root = tk.Tk()
 root.title("Symmetrical Meme Task Manager")
 
 # Create GUI elements
-add_button = tk.Button(root, text="Add Task", command=add_task_gui)
-list_button = tk.Button(root, text="List Tasks", command=list_tasks_gui)
+add_button = tk.Button(root, text="Add Task", command=add_task)
+list_button = tk.Button(root, text="List Tasks", command=list_tasks)
 
 # Pack the elements onto the window
 add_button.pack()
