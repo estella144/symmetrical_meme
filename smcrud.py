@@ -12,12 +12,18 @@ import sys
 import logging
 from datetime import datetime, timedelta
 
+# Flag to change the default data file
+DEV_MODE = True
+
 # Data file setup
 # Determine the directory containing the script
 script_dir = os.path.dirname(sys.argv[0])
 # Change the working directory to the script directory
 os.chdir(script_dir)
-DATA_FILE = os.path.join(os.getcwd(), "data/tasks.csv")
+if DEV_MODE:
+    DATA_FILE = os.path.join(os.getcwd(), "../data/tasks.csv")
+else:
+    DATA_FILE = os.path.join(os.getcwd(), "data/tasks.csv")
 print(DATA_FILE)
 
 # ANSI color codes for colour-coding of tasks
