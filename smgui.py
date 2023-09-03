@@ -1,23 +1,22 @@
+# This file is part of Symmetrical Meme
+# A task management application in Python
+# v0.2.dev2 (2 Sep 2023, main/857f324)
+
+# Summary:
+# A Python CLI task management application
+# with CRUD operations for tasks, data storage, and error handling.
+
 import tkinter as tk
 from tkinter import messagebox
-
-# Function to add a task (you'll need to implement this)
-def add_task():
-    # Placeholder function for adding tasks
-    messagebox.showinfo("Add Task", "Functionality to add tasks will be implemented here.")
-
-# Function to list tasks (you'll need to implement this)
-def list_tasks():
-    # Placeholder function for listing tasks
-    messagebox.showinfo("List Tasks", "Functionality to list tasks will be implemented here.")
+from smgui_interface import add_task_gui, list_tasks_gui
 
 # Create the main application window
 root = tk.Tk()
 root.title("Symmetrical Meme Task Manager")
 
 # Create GUI elements
-add_button = tk.Button(root, text="Add Task", command=add_task)
-list_button = tk.Button(root, text="List Tasks", command=list_tasks)
+add_button = tk.Button(root, text="Add Task", command=add_task_gui)
+list_button = tk.Button(root, text="List Tasks", command=list_tasks_gui)
 
 # Pack the elements onto the window
 add_button.pack()
