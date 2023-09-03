@@ -1,6 +1,6 @@
 # This file is part of Symmetrical Meme
 # A task management application in Python
-# v0.2.dev2 (2 Sep 2023, main/857f324)
+# v0.2.dev4 (2 Sep 2023, main/bfdf685)
 
 # Summary:
 # A Python CLI task management application
@@ -12,7 +12,7 @@ from smgui_interface import add_task, list_tasks
 
 # Create the main application window
 root = tk.Tk()
-root.title("Symmetrical Meme Task Manager")
+root.title("Symmetrical Meme")
 
 # Create GUI elements
 add_button = tk.Button(root, text="Add Task", command=add_task)

@@ -1,6 +1,6 @@
 # This file is part of Symmetrical Meme
 # A task management application in Python
-# v0.2.dev3 (2 Sep 2023, main/857f324)
+# v0.2.dev4 (2 Sep 2023, main/bfdf685)
 
 # Summary:
 # A Python CLI task management application
@@ -8,10 +8,10 @@
 
 import tkinter as tk
 from tkinter import messagebox
-from smcrud import add_task, list_tasks, update_task, delete_task, search_tasks
+import smcrud as crud
 
 # Function to add a task (you'll need to implement this)
-def add_task():
+def add_task_gui():
     # Create a new tkinter window for adding tasks
     add_window = tk.Toplevel()
     add_window.title("Add Task")
@@ -38,7 +38,7 @@ def add_task():
         priority = priority_entry.get()  # Get priority input
 
         # Call the core function to add the task
-        add_task(title, description, due_date, priority)  # Pass priority to add_task
+        crud.add_task(title, description, due_date, priority)  # Pass priority to add_task
 
         # Close the add window
         add_window.destroy()
@@ -62,6 +62,26 @@ def add_task():
     save_button.pack()
 
 # Function to list tasks (you'll need to implement this)
-def list_tasks():
-    # Placeholder function for listing tasks
-    messagebox.showinfo("List Tasks", "Functionality to list tasks will be implemented here.")
+def list_tasks_gui():
+    # Function to list tasks
+def list_tasks_gui():
+    # Create a new tkinter window for listing tasks
+    list_window = tk.Toplevel()
+    list_window.title("List Tasks")
+
+    # Call the core function to list tasks
+    tasks = list_tasks()
+
+    # Create a text widget to display tasks
+    task_text = tk.Text(list_window)
+    task_text.pack()
+
+    # Display tasks in the text widget
+    for task in tasks:
+        task_text.insert(tk.END, f"Title: {task['title']}\n")
+        task_text.insert(tk.END, f"Description: {task['description']}\n")
+        task_text.insert(tk.END, f"Due Date: {task['due_date']}\n")
+        task_text.insert(tk.END, f"Priority: {task['priority']}\n\n")
+
+    # Make the text widget read-only
+    task_text.config(state=tk.DISABLED)

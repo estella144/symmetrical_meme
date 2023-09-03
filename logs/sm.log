@@ -248,3 +248,7 @@
 2023-09-03 06:51:48,635 - DEBUG - User selected option 6 from the menu.
 2023-09-03 06:51:48,635 - INFO - Quitting in progress
 2023-09-03 06:51:48,636 - INFO - Program terminated normally
+2023-09-03 07:45:26,328 - INFO - Adding task, attempting to open file
+2023-09-03 07:45:26,332 - DEBUG - Writing task to file
+2023-09-03 07:45:26,334 - DEBUG - File written to successfully
+2023-09-03 07:45:26,334 - INFO - Task added successfully
