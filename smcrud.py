@@ -12,6 +12,11 @@ import sys
 import logging
 from datetime import datetime, timedelta
 
+# Data file setup
+# Determine the directory containing the script
+script_dir = os.path.dirname(sys.argv[0])
+# Change the working directory to the script directory
+os.chdir(script_dir)
 DATA_FILE = os.path.join(os.getcwd(), "data/tasks.csv")
 print(DATA_FILE)
 
