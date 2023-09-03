@@ -252,3 +252,23 @@
 2023-09-03 07:45:26,332 - DEBUG - Writing task to file
 2023-09-03 07:45:26,334 - DEBUG - File written to successfully
 2023-09-03 07:45:26,334 - INFO - Task added successfully
+2023-09-03 07:51:59,403 - INFO - Adding task, attempting to open file
+2023-09-03 07:51:59,406 - DEBUG - Reading tasks from file
+2023-09-03 07:51:59,407 - DEBUG - File read successfully
+2023-09-03 07:51:59,408 - INFO - Tasks found, listing tasks
+2023-09-03 07:51:59,421 - INFO - Tasks listed successfully
+2023-09-03 07:52:29,619 - INFO - Adding task, attempting to open file
+2023-09-03 07:52:29,621 - DEBUG - Reading tasks from file
+2023-09-03 07:52:29,622 - DEBUG - File read successfully
+2023-09-03 07:52:29,622 - INFO - Tasks found, listing tasks
+2023-09-03 07:52:29,622 - INFO - Tasks listed successfully
+2023-09-03 07:55:37,126 - INFO - Adding task, attempting to open file
+2023-09-03 07:55:37,127 - DEBUG - Reading tasks from file
+2023-09-03 07:55:37,127 - DEBUG - File read successfully
+2023-09-03 07:55:37,127 - INFO - Tasks found, listing tasks
+2023-09-03 07:55:37,134 - INFO - Tasks listed successfully
+2023-09-03 07:56:50,641 - INFO - Adding task, attempting to open file
+2023-09-03 07:56:50,641 - DEBUG - Reading tasks from file
+2023-09-03 07:56:50,642 - DEBUG - File read successfully
+2023-09-03 07:56:50,642 - INFO - Tasks found, listing tasks
+2023-09-03 07:56:50,648 - INFO - Tasks listed successfully
