@@ -1,6 +1,6 @@
 # This file is part of Symmetrical Meme
 # A task management application in Python
-# v0.2.dev4 (2 Sep 2023, main/bfdf685)
+# v0.2.dev7 (2 Sep 2023, main/bfdf685)
 
 # Summary:
 # A Python CLI task management application
@@ -122,7 +122,7 @@ def update_task_gui():
         priority = priority_entry.get()
 
         # Call the core function to update the task
-        update_task(task_id, title, description, due_date, priority)
+        crud.update_task(task_id, title, description, due_date, priority)
 
         # Close the update window
         update_window.destroy()
@@ -162,7 +162,7 @@ def delete_task_gui():
 
         # Call the core function to delete the task
         # You'll need to implement the delete_task() function in smcrud.py
-        delete_task(task_id)
+        crud.delete_task(task_id)
 
         # Close the delete window
         delete_window.destroy()
@@ -191,7 +191,7 @@ def search_tasks_gui():
         keywords = search_entry.get()
 
         # Call the core function to search for tasks
-        matching_tasks = search_tasks(keywords)
+        matching_tasks = crud.search_tasks(keywords)
 
         # Display matching tasks in a text widget
         matching_text = tk.Text(search_window)
