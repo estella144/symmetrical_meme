@@ -29,6 +29,10 @@ quit_button = tk.Button(root, text="Quit", command=quit_application)
 # Pack the elements onto the window
 add_button.pack()
 list_button.pack()
+update_button.pack()
+delete_button.pack()
+search_button.pack()
+quit_button.pack()
 
 # Start the GUI application
 root.mainloop()
