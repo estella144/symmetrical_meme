@@ -161,5 +161,6 @@ cython_debug/
 
 *.pyc
 *.log
-smui
-smgui
+# Executables
+smui-*
+smgui-*
