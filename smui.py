@@ -1,6 +1,6 @@
 # This file is part of Symmetrical Meme
 # A task management application in Python
-# v0.1 (2 Sep 2023, main/857f324)
+# v0.2.dev1 (3 Sep 2023, main/01842bf)
 
 # Summary:
 # A Python CLI task management application
@@ -53,7 +53,7 @@ def main_menu():
         elif choice == "2":
             logging.info(f"Task listing in progress")
             logging.debug(f"smui.main_menu() is preparing to run smcrud.list_tasks()")
-            crud.list_tasks(sort_by_due_date=False, sort_by_priority=False)
+            crud.list_tasks(sort_by_due_date=False, sort_by_priority=False, show_reminders=True)
             logging.info(f"Task listing completed successfully")
         elif choice == "3":
             logging.info("Task is being updated")
@@ -65,8 +65,10 @@ def main_menu():
             logging.debug(f"New task description chosen: {new_description}")
             new_due_date = input("Enter the new due date (YYYY-MM-DD): ")
             logging.debug(f"New due date chosen: {new_due_date}")
+            new_priority = input("Enter the new priority (1-3):")
+            logging.debug(f"New priority chosen: {new_priority}")
             logging.debug(f"smui.main_menu() is preparing to run smcrud.update_task()")
-            crud.update_task(task_index, new_title, new_description, new_due_date)
+            crud.update_task(task_index, new_title, new_description, new_due_date, new_priority)
             logging.debug(f"Execution returned to smui.main_menu()")
             logging.info(f"Task was updated successfully")
         elif choice == "4":

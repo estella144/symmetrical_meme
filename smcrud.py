@@ -1,6 +1,6 @@
 # This file is part of Symmetrical Meme
 # A task management application in Python
-# v0.1 (2 Sep 2023, main/2187db3)
+# v0.2.dev1 (3 Sep 2023, main/01842bf)
 
 # Summary:
 # A Python CLI task management application
@@ -10,7 +10,7 @@ import os
 import csv
 import sys
 import logging
-from datetime import datetime
+from datetime import datetime, timedelta
 
 DATA_FILE = "data/tasks.csv"
 
@@ -47,21 +47,21 @@ def print_task_list(tasks, show_reminders):
     reminder_threshold = today + timedelta(days=1)
 
     for index, task in enumerate(tasks):
-    due_date = datetime.strptime(task[2], '%Y-%m-%d').date()
-    if due_date < today:
-        print(f"{index + 1}. Title: {RED}{task[0]}{RESET}, Description: {task[1]}, Due Date: {task[2]}, Priority: {task[3]}")
-        if show_reminders:
-            print(f"{RED}   Reminder: Task '{task[0]}' is overdue!")
-    elif due_date == today:
-        print(f"{index + 1}. Title: {YELLOW}{task[0]}{RESET}, Description: {task[1]}, Due Date: {task[2]}, Priority: {task[3]}")
-        if show_reminders:
-            print(f"{YELLOW}   Reminder: Task '{task[0]}' is due today!")
-    else:
-        print(f"{index + 1}. Title: {GREEN}{task[0]}{RESET}, Description: {task[1]}, Due Date: {task[2]}, Priority: {task[3]}")
-        if show_reminders and today <= due_date <= reminder_threshold:
-            print(f"{YELLOW}   Reminder: Task '{task[0]}' is due soon!")
+        due_date = datetime.strptime(task[2], '%Y-%m-%d').date()
+        if due_date < today:
+            print(f"{index + 1}. Title: {RED}{task[0]}{RESET}, Description: {task[1]}, Due Date: {task[2]}, Priority: {task[3]}")
+            if show_reminders:
+                print(f"{RED}   Reminder: Task '{task[0]}' is overdue!{RESET}")
+        elif due_date == today:
+            print(f"{index + 1}. Title: {YELLOW}{task[0]}{RESET}, Description: {task[1]}, Due Date: {task[2]}, Priority: {task[3]}")
+            if show_reminders:
+                print(f"{YELLOW}   Reminder: Task '{task[0]}' is due today!{RESET}")
+        else:
+            print(f"{index + 1}. Title: {GREEN}{task[0]}{RESET}, Description: {task[1]}, Due Date: {task[2]}, Priority: {task[3]}")
+            if show_reminders and today <= due_date <= reminder_threshold:
+                print(f"{YELLOW}   Reminder: Task '{task[0]}' is due soon!{RESET}")
 
-def list_tasks(sort_by_due_date=False, sort_by_priority=False):
+def list_tasks(sort_by_due_date=False, sort_by_priority=False, show_reminders=True):
     """Function to list tasks, with optional sorting."""
     logging.info("Adding task, attempting to open file")
     try:
@@ -79,13 +79,14 @@ def list_tasks(sort_by_due_date=False, sort_by_priority=False):
             logging.debug("Tasks sorted by priority")
 
         if tasks:
-            print_task_list(tasks)
+            print_task_list(tasks, show_reminders)
             logging.info("Tasks listed successfully")
         else:
             logging.info("No tasks found, success")
             print("No tasks found.")
     except Exception as e:
         print(f"An error occurred: {str(e)}")
+        logging.error(f"An error occurred: {str(e)}")
 
 # Tests
 # add_task("Task 1", "Description for Task 1", "2023-09-10")
@@ -215,6 +216,6 @@ def handle_invalid_input():
 # user_feedback("Task added successfully!")
 # handle_invalid_input()
 
-if name == "__main__":
+if __name__ == "__main__":
     print("This file is not intended to be run directly!")
     print("To run Symmetrical Meme, run smui.py.")
