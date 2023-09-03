@@ -1,0 +1,274 @@
+2023-09-03 06:38:01,803 - INFO - Logging set up successfully
+2023-09-03 06:38:01,803 - INFO - Menu is being displayed
+2023-09-03 06:38:01,803 - INFO - Menu displayed successfully
+2023-09-03 06:38:04,289 - DEBUG - User selected option 1 from the menu.
+2023-09-03 06:38:04,289 - INFO - Task is being created
+2023-09-03 06:38:11,488 - DEBUG - Task title: Example 1
+2023-09-03 06:38:27,395 - DEBUG - Task description: This is a test. Created with smui.py
+2023-09-03 06:38:46,273 - DEBUG - Task due date: 2023-09-04
+2023-09-03 06:38:48,444 - DEBUG - Task priority: 3
+2023-09-03 06:38:48,444 - DEBUG - smui.main_menu() is preparing to run smcrud.add_task()
+2023-09-03 06:38:48,445 - INFO - Adding task, attempting to open file
+2023-09-03 06:38:48,445 - DEBUG - Writing task to file
+2023-09-03 06:38:48,446 - DEBUG - File written to successfully
+2023-09-03 06:38:48,448 - INFO - Task added successfully
+2023-09-03 06:38:48,449 - DEBUG - Execution returned to smui.main_menu()
+2023-09-03 06:38:48,449 - INFO - Task was created successfully
+2023-09-03 06:38:48,449 - INFO - Menu is being displayed
+2023-09-03 06:38:48,449 - INFO - Menu displayed successfully
+2023-09-03 06:38:51,946 - DEBUG - User selected option 2 from the menu.
+2023-09-03 06:38:51,947 - INFO - Task listing in progress
+2023-09-03 06:38:51,947 - DEBUG - smui.main_menu() is preparing to run smcrud.list_tasks()
+2023-09-03 06:38:51,947 - INFO - Adding task, attempting to open file
+2023-09-03 06:38:51,948 - DEBUG - Reading tasks from file
+2023-09-03 06:38:51,949 - DEBUG - File read successfully
+2023-09-03 06:38:51,950 - INFO - Task listing completed successfully
+2023-09-03 06:38:51,950 - INFO - Menu is being displayed
+2023-09-03 06:38:51,950 - INFO - Menu displayed successfully
+2023-09-03 06:39:00,049 - DEBUG - User selected option 6 from the menu.
+2023-09-03 06:39:00,050 - INFO - Quitting in progress
+2023-09-03 06:39:00,050 - INFO - Program terminated normally
+2023-09-03 06:40:45,853 - INFO - Logging set up successfully
+2023-09-03 06:40:45,854 - INFO - Menu is being displayed
+2023-09-03 06:40:45,854 - INFO - Menu displayed successfully
+2023-09-03 06:40:50,492 - DEBUG - User selected option 2 from the menu.
+2023-09-03 06:40:50,492 - INFO - Task listing in progress
+2023-09-03 06:40:50,492 - DEBUG - smui.main_menu() is preparing to run smcrud.list_tasks()
+2023-09-03 06:40:50,492 - INFO - Adding task, attempting to open file
+2023-09-03 06:40:50,493 - DEBUG - Reading tasks from file
+2023-09-03 06:40:50,493 - DEBUG - File read successfully
+2023-09-03 06:40:50,494 - ERROR - An error occurred: print_task_list() missing 1 required positional argument: 'show_reminders'
+2023-09-03 06:40:50,494 - INFO - Task listing completed successfully
+2023-09-03 06:40:50,494 - INFO - Menu is being displayed
+2023-09-03 06:40:50,494 - INFO - Menu displayed successfully
+2023-09-03 06:40:57,967 - DEBUG - User selected option 6 from the menu.
+2023-09-03 06:40:57,967 - INFO - Quitting in progress
+2023-09-03 06:40:57,968 - INFO - Program terminated normally
+2023-09-03 06:42:00,651 - INFO - Logging set up successfully
+2023-09-03 06:42:00,651 - INFO - Menu is being displayed
+2023-09-03 06:42:00,651 - INFO - Menu displayed successfully
+2023-09-03 06:42:01,241 - DEBUG - User selected option 2 from the menu.
+2023-09-03 06:42:01,241 - INFO - Task listing in progress
+2023-09-03 06:42:01,241 - DEBUG - smui.main_menu() is preparing to run smcrud.list_tasks()
+2023-09-03 06:42:01,241 - INFO - Adding task, attempting to open file
+2023-09-03 06:42:01,242 - DEBUG - Reading tasks from file
+2023-09-03 06:42:01,242 - DEBUG - File read successfully
+2023-09-03 06:42:01,242 - INFO - Tasks found, listing tasks
+2023-09-03 06:42:01,243 - ERROR - An error occurred: name 'timedelta' is not defined
+2023-09-03 06:42:01,243 - INFO - Task listing completed successfully
+2023-09-03 06:42:01,243 - INFO - Menu is being displayed
+2023-09-03 06:42:01,244 - INFO - Menu displayed successfully
+2023-09-03 06:42:15,547 - DEBUG - User selected option 6 from the menu.
+2023-09-03 06:42:15,547 - INFO - Quitting in progress
+2023-09-03 06:42:15,547 - INFO - Program terminated normally
+2023-09-03 06:42:22,722 - INFO - Logging set up successfully
+2023-09-03 06:42:22,723 - INFO - Menu is being displayed
+2023-09-03 06:42:22,723 - INFO - Menu displayed successfully
+2023-09-03 06:42:24,065 - DEBUG - User selected option 2 from the menu.
+2023-09-03 06:42:24,065 - INFO - Task listing in progress
+2023-09-03 06:42:24,065 - DEBUG - smui.main_menu() is preparing to run smcrud.list_tasks()
+2023-09-03 06:42:24,066 - INFO - Adding task, attempting to open file
+2023-09-03 06:42:24,066 - DEBUG - Reading tasks from file
+2023-09-03 06:42:24,066 - DEBUG - File read successfully
+2023-09-03 06:42:24,067 - INFO - Tasks found, listing tasks
+2023-09-03 06:42:24,090 - INFO - Tasks listed successfully
+2023-09-03 06:42:24,090 - INFO - Task listing completed successfully
+2023-09-03 06:42:24,090 - INFO - Menu is being displayed
+2023-09-03 06:42:24,090 - INFO - Menu displayed successfully
+2023-09-03 06:42:30,624 - DEBUG - User selected option 6 from the menu.
+2023-09-03 06:42:30,624 - INFO - Quitting in progress
+2023-09-03 06:42:30,625 - INFO - Program terminated normally
+2023-09-03 06:43:08,751 - INFO - Logging set up successfully
+2023-09-03 06:43:08,751 - INFO - Menu is being displayed
+2023-09-03 06:43:08,752 - INFO - Menu displayed successfully
+2023-09-03 06:43:12,421 - DEBUG - User selected option 2 from the menu.
+2023-09-03 06:43:12,423 - INFO - Task listing in progress
+2023-09-03 06:43:12,423 - DEBUG - smui.main_menu() is preparing to run smcrud.list_tasks()
+2023-09-03 06:43:12,423 - INFO - Adding task, attempting to open file
+2023-09-03 06:43:12,424 - DEBUG - Reading tasks from file
+2023-09-03 06:43:12,424 - DEBUG - File read successfully
+2023-09-03 06:43:12,425 - INFO - Tasks found, listing tasks
+2023-09-03 06:43:12,434 - INFO - Tasks listed successfully
+2023-09-03 06:43:12,435 - INFO - Task listing completed successfully
+2023-09-03 06:43:12,435 - INFO - Menu is being displayed
+2023-09-03 06:43:12,435 - INFO - Menu displayed successfully
+2023-09-03 06:43:24,600 - DEBUG - User selected option 1 from the menu.
+2023-09-03 06:43:24,600 - INFO - Task is being created
+2023-09-03 06:43:29,939 - DEBUG - Task title: Example 2
+2023-09-03 06:43:48,058 - DEBUG - Task description: This is another test. Created with smui.py
+2023-09-03 06:43:55,710 - DEBUG - Task due date: 2023-09-03
+2023-09-03 06:43:58,156 - DEBUG - Task priority: 2
+2023-09-03 06:43:58,156 - DEBUG - smui.main_menu() is preparing to run smcrud.add_task()
+2023-09-03 06:43:58,157 - INFO - Adding task, attempting to open file
+2023-09-03 06:43:58,158 - DEBUG - Writing task to file
+2023-09-03 06:43:58,159 - DEBUG - File written to successfully
+2023-09-03 06:43:58,161 - INFO - Task added successfully
+2023-09-03 06:43:58,161 - DEBUG - Execution returned to smui.main_menu()
+2023-09-03 06:43:58,161 - INFO - Task was created successfully
+2023-09-03 06:43:58,162 - INFO - Menu is being displayed
+2023-09-03 06:43:58,162 - INFO - Menu displayed successfully
+2023-09-03 06:44:00,166 - DEBUG - User selected option 2 from the menu.
+2023-09-03 06:44:00,167 - INFO - Task listing in progress
+2023-09-03 06:44:00,167 - DEBUG - smui.main_menu() is preparing to run smcrud.list_tasks()
+2023-09-03 06:44:00,168 - INFO - Adding task, attempting to open file
+2023-09-03 06:44:00,169 - DEBUG - Reading tasks from file
+2023-09-03 06:44:00,169 - DEBUG - File read successfully
+2023-09-03 06:44:00,170 - INFO - Tasks found, listing tasks
+2023-09-03 06:44:00,171 - INFO - Tasks listed successfully
+2023-09-03 06:44:00,171 - INFO - Task listing completed successfully
+2023-09-03 06:44:00,171 - INFO - Menu is being displayed
+2023-09-03 06:44:00,172 - INFO - Menu displayed successfully
+2023-09-03 06:44:05,100 - DEBUG - User selected option 1 from the menu.
+2023-09-03 06:44:05,100 - INFO - Task is being created
+2023-09-03 06:44:07,693 - DEBUG - Task title: Example 3
+2023-09-03 06:44:35,614 - DEBUG - Task description: This is another test. Created with smui.py.
+2023-09-03 06:44:41,304 - DEBUG - Task due date: 2023-09-01
+2023-09-03 06:44:42,968 - DEBUG - Task priority: 3
+2023-09-03 06:44:42,968 - DEBUG - smui.main_menu() is preparing to run smcrud.add_task()
+2023-09-03 06:44:42,968 - INFO - Adding task, attempting to open file
+2023-09-03 06:44:42,969 - DEBUG - Writing task to file
+2023-09-03 06:44:42,969 - DEBUG - File written to successfully
+2023-09-03 06:44:42,969 - INFO - Task added successfully
+2023-09-03 06:44:42,970 - DEBUG - Execution returned to smui.main_menu()
+2023-09-03 06:44:42,970 - INFO - Task was created successfully
+2023-09-03 06:44:42,970 - INFO - Menu is being displayed
+2023-09-03 06:44:42,970 - INFO - Menu displayed successfully
+2023-09-03 06:44:44,855 - DEBUG - User selected option 2 from the menu.
+2023-09-03 06:44:44,856 - INFO - Task listing in progress
+2023-09-03 06:44:44,856 - DEBUG - smui.main_menu() is preparing to run smcrud.list_tasks()
+2023-09-03 06:44:44,856 - INFO - Adding task, attempting to open file
+2023-09-03 06:44:44,857 - DEBUG - Reading tasks from file
+2023-09-03 06:44:44,857 - DEBUG - File read successfully
+2023-09-03 06:44:44,860 - INFO - Tasks found, listing tasks
+2023-09-03 06:44:44,861 - INFO - Tasks listed successfully
+2023-09-03 06:44:44,861 - INFO - Task listing completed successfully
+2023-09-03 06:44:44,861 - INFO - Menu is being displayed
+2023-09-03 06:44:44,861 - INFO - Menu displayed successfully
+2023-09-03 06:44:52,493 - DEBUG - User selected option 3 from the menu.
+2023-09-03 06:44:52,493 - INFO - Task is being updated
+2023-09-03 06:44:56,362 - DEBUG - Task index chosen: 3
+2023-09-03 06:45:08,504 - DEBUG - New task title chosen: Updated Example 3
+2023-09-03 06:45:22,294 - DEBUG - New task description chosen: This is the updated test with smui.py
+2023-09-03 06:45:31,894 - DEBUG - New due date chosen: 2023-09-00
+2023-09-03 06:45:31,895 - DEBUG - smui.main_menu() is preparing to run smcrud.update_task()
+2023-09-03 06:47:47,893 - INFO - Logging set up successfully
+2023-09-03 06:47:47,894 - INFO - Menu is being displayed
+2023-09-03 06:47:47,894 - INFO - Menu displayed successfully
+2023-09-03 06:47:54,706 - DEBUG - User selected option 3 from the menu.
+2023-09-03 06:47:54,706 - INFO - Task is being updated
+2023-09-03 06:47:56,175 - DEBUG - Task index chosen: 3
+2023-09-03 06:48:00,630 - DEBUG - New task title chosen: Updated Example 3
+2023-09-03 06:48:08,328 - DEBUG - New task description chosen: This is the updated test with smui.py
+2023-09-03 06:48:11,969 - DEBUG - New due date chosen: 2023-09-00
+2023-09-03 06:48:34,824 - INFO - Logging set up successfully
+2023-09-03 06:48:34,824 - INFO - Menu is being displayed
+2023-09-03 06:48:34,824 - INFO - Menu displayed successfully
+2023-09-03 06:48:35,418 - DEBUG - User selected option 3 from the menu.
+2023-09-03 06:48:35,418 - INFO - Task is being updated
+2023-09-03 06:48:35,867 - DEBUG - Task index chosen: 3
+2023-09-03 06:48:39,102 - DEBUG - New task title chosen: Updated Example 3
+2023-09-03 06:48:47,200 - DEBUG - New task description chosen: This is the updated test with smui.py.
+2023-09-03 06:48:50,596 - DEBUG - New due date chosen: 2023-09-00
+2023-09-03 06:48:52,358 - DEBUG - New priority chosen: 3
+2023-09-03 06:48:52,358 - DEBUG - smui.main_menu() is preparing to run smcrud.update_task()
+2023-09-03 06:48:52,358 - INFO - Updating task, attempting to open file
+2023-09-03 06:48:52,359 - DEBUG - File opened successfully
+2023-09-03 06:48:52,359 - INFO - Task
+2023-09-03 06:48:52,360 - INFO - Task updated successfully!
+2023-09-03 06:48:52,361 - DEBUG - Execution returned to smui.main_menu()
+2023-09-03 06:48:52,361 - INFO - Task was updated successfully
+2023-09-03 06:48:52,361 - INFO - Menu is being displayed
+2023-09-03 06:48:52,361 - INFO - Menu displayed successfully
+2023-09-03 06:49:45,682 - DEBUG - User selected option 2 from the menu.
+2023-09-03 06:49:45,684 - INFO - Task listing in progress
+2023-09-03 06:49:45,685 - DEBUG - smui.main_menu() is preparing to run smcrud.list_tasks()
+2023-09-03 06:49:45,685 - INFO - Adding task, attempting to open file
+2023-09-03 06:49:45,685 - DEBUG - Reading tasks from file
+2023-09-03 06:49:45,686 - DEBUG - File read successfully
+2023-09-03 06:49:45,687 - INFO - Tasks found, listing tasks
+2023-09-03 06:49:45,708 - ERROR - An error occurred: time data '2023-09-00' does not match format '%Y-%m-%d'
+2023-09-03 06:49:45,709 - INFO - Task listing completed successfully
+2023-09-03 06:49:45,709 - INFO - Menu is being displayed
+2023-09-03 06:49:45,710 - INFO - Menu displayed successfully
+2023-09-03 06:50:28,700 - DEBUG - User selected option 2 from the menu.
+2023-09-03 06:50:28,701 - INFO - Task listing in progress
+2023-09-03 06:50:28,701 - DEBUG - smui.main_menu() is preparing to run smcrud.list_tasks()
+2023-09-03 06:50:28,701 - INFO - Adding task, attempting to open file
+2023-09-03 06:50:28,702 - DEBUG - Reading tasks from file
+2023-09-03 06:50:28,703 - DEBUG - File read successfully
+2023-09-03 06:50:28,703 - INFO - Tasks found, listing tasks
+2023-09-03 06:50:28,703 - INFO - Tasks listed successfully
+2023-09-03 06:50:28,704 - INFO - Task listing completed successfully
+2023-09-03 06:50:28,704 - INFO - Menu is being displayed
+2023-09-03 06:50:28,704 - INFO - Menu displayed successfully
+2023-09-03 06:50:38,677 - DEBUG - User selected option 5 from the menu.
+2023-09-03 06:50:38,677 - INFO - Task search in progress
+2023-09-03 06:50:40,439 - INFO - Keyword: Updated
+2023-09-03 06:50:40,440 - DEBUG - smui.main_menu() is preparing to run smcrud.search_tasks())
+2023-09-03 06:50:40,440 - INFO - Searching tasks by keyword, attempting to open file
+2023-09-03 06:50:40,441 - DEBUG - File opened successfully
+2023-09-03 06:50:40,441 - INFO - Found matching tasks successfully
+2023-09-03 06:50:40,441 - DEBUG - Execution returned to smui.main_menu()
+2023-09-03 06:50:40,442 - INFO - Search successful
+2023-09-03 06:50:40,442 - INFO - Menu is being displayed
+2023-09-03 06:50:40,443 - INFO - Menu displayed successfully
+2023-09-03 06:50:49,978 - DEBUG - User selected option 5 from the menu.
+2023-09-03 06:50:49,978 - INFO - Task search in progress
+2023-09-03 06:50:51,167 - INFO - Keyword: Nope
+2023-09-03 06:50:51,168 - DEBUG - smui.main_menu() is preparing to run smcrud.search_tasks())
+2023-09-03 06:50:51,169 - INFO - Searching tasks by keyword, attempting to open file
+2023-09-03 06:50:51,169 - DEBUG - File opened successfully
+2023-09-03 06:50:51,170 - INFO - No matching tasks found, success
+2023-09-03 06:50:51,170 - DEBUG - Execution returned to smui.main_menu()
+2023-09-03 06:50:51,170 - INFO - Search successful
+2023-09-03 06:50:51,171 - INFO - Menu is being displayed
+2023-09-03 06:50:51,171 - INFO - Menu displayed successfully
+2023-09-03 06:50:58,278 - DEBUG - User selected option 4 from the menu.
+2023-09-03 06:50:58,279 - INFO - Task is being deleted
+2023-09-03 06:51:07,953 - INFO - Task index to delete: 1
+2023-09-03 06:51:07,954 - DEBUG - smui.main_menu() is preparing to run smcrud.delete_task()
+2023-09-03 06:51:07,954 - INFO - Deleting task, attempting to open file
+2023-09-03 06:51:07,954 - DEBUG - File opened successfully
+2023-09-03 06:51:07,957 - INFO - Task 'Example 1' deleted successfully!
+2023-09-03 06:51:07,958 - DEBUG - Execution returned to smui.main_menu()
+2023-09-03 06:51:07,958 - INFO - Task was deleted successfully
+2023-09-03 06:51:07,958 - INFO - Menu is being displayed
+2023-09-03 06:51:07,958 - INFO - Menu displayed successfully
+2023-09-03 06:51:09,571 - DEBUG - User selected option 2 from the menu.
+2023-09-03 06:51:09,571 - INFO - Task listing in progress
+2023-09-03 06:51:09,572 - DEBUG - smui.main_menu() is preparing to run smcrud.list_tasks()
+2023-09-03 06:51:09,572 - INFO - Adding task, attempting to open file
+2023-09-03 06:51:09,572 - DEBUG - Reading tasks from file
+2023-09-03 06:51:09,573 - DEBUG - File read successfully
+2023-09-03 06:51:09,573 - INFO - Tasks found, listing tasks
+2023-09-03 06:51:09,574 - INFO - Tasks listed successfully
+2023-09-03 06:51:09,574 - INFO - Task listing completed successfully
+2023-09-03 06:51:09,574 - INFO - Menu is being displayed
+2023-09-03 06:51:09,575 - INFO - Menu displayed successfully
+2023-09-03 06:51:48,635 - DEBUG - User selected option 6 from the menu.
+2023-09-03 06:51:48,635 - INFO - Quitting in progress
+2023-09-03 06:51:48,636 - INFO - Program terminated normally
+2023-09-03 07:45:26,328 - INFO - Adding task, attempting to open file
+2023-09-03 07:45:26,332 - DEBUG - Writing task to file
+2023-09-03 07:45:26,334 - DEBUG - File written to successfully
+2023-09-03 07:45:26,334 - INFO - Task added successfully
+2023-09-03 07:51:59,403 - INFO - Adding task, attempting to open file
+2023-09-03 07:51:59,406 - DEBUG - Reading tasks from file
+2023-09-03 07:51:59,407 - DEBUG - File read successfully
+2023-09-03 07:51:59,408 - INFO - Tasks found, listing tasks
+2023-09-03 07:51:59,421 - INFO - Tasks listed successfully
+2023-09-03 07:52:29,619 - INFO - Adding task, attempting to open file
+2023-09-03 07:52:29,621 - DEBUG - Reading tasks from file
+2023-09-03 07:52:29,622 - DEBUG - File read successfully
+2023-09-03 07:52:29,622 - INFO - Tasks found, listing tasks
+2023-09-03 07:52:29,622 - INFO - Tasks listed successfully
+2023-09-03 07:55:37,126 - INFO - Adding task, attempting to open file
+2023-09-03 07:55:37,127 - DEBUG - Reading tasks from file
+2023-09-03 07:55:37,127 - DEBUG - File read successfully
+2023-09-03 07:55:37,127 - INFO - Tasks found, listing tasks
+2023-09-03 07:55:37,134 - INFO - Tasks listed successfully
+2023-09-03 07:56:50,641 - INFO - Adding task, attempting to open file
+2023-09-03 07:56:50,641 - DEBUG - Reading tasks from file
+2023-09-03 07:56:50,642 - DEBUG - File read successfully
+2023-09-03 07:56:50,642 - INFO - Tasks found, listing tasks
+2023-09-03 07:56:50,648 - INFO - Tasks listed successfully

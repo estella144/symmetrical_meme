@@ -1,6 +1,6 @@
 # This file is part of Symmetrical Meme
 # A task management application in Python
-# v0.2.dev1 (3 Sep 2023, main/01842bf)
+# v0.2.dev4 (3 Sep 2023, main/01842bf)
 
 # Summary:
 # A Python CLI task management application
@@ -81,9 +81,11 @@ def list_tasks(sort_by_due_date=False, sort_by_priority=False, show_reminders=Tr
         if tasks:
             print_task_list(tasks, show_reminders)
             logging.info("Tasks listed successfully")
+            return tasks
         else:
             logging.info("No tasks found, success")
             print("No tasks found.")
+            return tasks
     except Exception as e:
         print(f"An error occurred: {str(e)}")
         logging.error(f"An error occurred: {str(e)}")
