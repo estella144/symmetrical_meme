@@ -1,6 +1,6 @@
 # This file is part of Symmetrical Meme
 # A task management application in Python
-# v0.2.dev5 (2 Sep 2023, main/bfdf685)
+# v0.2.dev6 (2 Sep 2023, main/bfdf685)
 
 # Summary:
 # A Python CLI task management application
@@ -8,7 +8,7 @@
 
 import tkinter as tk
 from tkinter import messagebox
-from smgui_interface import add_task_gui, list_tasks_gui, update_task_gui, delete_task_gui, search_task_gui
+from smgui_interface import add_task_gui, list_tasks_gui, update_task_gui, delete_task_gui, search_tasks_gui
 
 # Create the main application window
 root = tk.Tk()
