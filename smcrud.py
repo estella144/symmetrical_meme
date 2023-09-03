@@ -1,6 +1,6 @@
 # This file is part of Symmetrical Meme
 # A task management application in Python
-# v0.2.dev6 (3 Sep 2023, main/7818b98)
+# v0.2.dev6 (3 Sep 2023, main/f9bc386)
 
 # Summary:
 # A Python CLI task management application
@@ -12,7 +12,7 @@ import sys
 import logging
 from datetime import datetime, timedelta
 
-DATA_FILE = "data/tasks.csv"
+DATA_FILE = os.path.join(os.getcwd(), "data/tasks.csv")
 
 # ANSI color codes for colour-coding of tasks
 
