@@ -1,6 +1,6 @@
 # This file is part of Symmetrical Meme
 # A task management application in Python
-# v0.2.dev4 (3 Sep 2023, main/01842bf)
+# v0.2.dev6 (3 Sep 2023, main/7818b98)
 
 # Summary:
 # A Python CLI task management application
@@ -22,7 +22,9 @@ RED = '\033[91m'
 RESET = '\033[0m'  # Reset color to default
 
 # Logging setup
-logging.basicConfig(filename="logs/sm.log", level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
+log_file_path = os.path.join(os.getcwd(), 'filename.log')
+
+logging.basicConfig(filename=log_file_path, level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 
 def add_task(title, description, due_date, priority):
     """Function to add a task."""

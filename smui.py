@@ -1,6 +1,6 @@
 # This file is part of Symmetrical Meme
 # A task management application in Python
-# v0.2.dev2 (2 Sep 2023, main/857f324)
+# v0.2.dev6 (2 Sep 2023, main/7818b98)
 
 # Summary:
 # A Python CLI task management application
@@ -11,7 +11,9 @@ import smcrud as crud
 
 # Logging setup
 
-logging.basicConfig(filename="logs/sm.log", level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
+log_file_path = os.path.join(os.getcwd(), 'filename.log')
+
+logging.basicConfig(filename=log_file_path, level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 logging.info(f"Logging set up successfully")
 
 def display_menu():
