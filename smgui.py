@@ -8,7 +8,7 @@
 
 import tkinter as tk
 from tkinter import messagebox
-from smgui_interface import add_task_gui, list_tasks_gui
+from smgui_interface import add_task, list_tasks
 
 # Create the main application window
 root = tk.Tk()
