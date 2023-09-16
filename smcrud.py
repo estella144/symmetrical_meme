@@ -9,6 +9,7 @@
 import os
 import csv
 import sys
+from sys import platform
 import logging
 from datetime import datetime, timedelta
 
@@ -20,10 +21,22 @@ DEV_MODE = True
 script_dir = os.path.dirname(sys.argv[0])
 # Change the working directory to the script directory
 os.chdir(script_dir)
-if DEV_MODE:
-    DATA_FILE = os.path.join(os.getcwd(), "../data/tasks.csv")
-else:
-    DATA_FILE = os.path.join(os.getcwd(), "data/tasks.csv")
+if platform == "linux" or platform == "linux2":
+    if DEV_MODE:
+        DATA_FILE = os.path.join(os.getcwd(), "data/tasks.csv")
+    else:
+        DATA_FILE = os.path.join(os.getcwd(), "data/tasks.csv")
+elif platform == "darwin":
+    if DEV_MODE:
+        DATA_FILE = os.path.join(os.getcwd(), "data/tasks.csv")
+    else:
+        DATA_FILE = os.path.join(os.getcwd(), "data/tasks.csv")
+elif platform == "win32":
+    if DEV_MODE:
+        DATA_FILE = os.path.join(os.getcwd(), "data\\tasks.csv")
+    else:
+        DATA_FILE = os.path.join(os.getcwd(), "data\\tasks.csv")
+
 print(DATA_FILE)
 
 # ANSI color codes for colour-coding of tasks

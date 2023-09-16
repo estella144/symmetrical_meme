@@ -1,0 +1,90 @@
+2023-09-16 10:54:33,528 - INFO - Adding task, attempting to open file
+2023-09-16 10:54:33,528 - ERROR - An error occurred: [Errno 2] No such file or directory: 'C:\\Users\\ict1\\Downloads\\symmetrical_meme-release\\symmetrical_meme-release\\../data/tasks.csv'
+2023-09-16 10:55:23,023 - INFO - Adding task, attempting to open file
+2023-09-16 10:55:23,023 - ERROR - An error occured while adding task: [Errno 2] No such file or directory: 'C:\\Users\\ict1\\Downloads\\symmetrical_meme-release\\symmetrical_meme-release\\../data/tasks.csv'
+2023-09-16 10:55:45,375 - INFO - Adding task, attempting to open file
+2023-09-16 10:56:12,219 - ERROR - An error occurred: [Errno 2] No such file or directory: 'C:\\Users\\ict1\\Downloads\\symmetrical_meme-release\\symmetrical_meme-release\\../data/tasks.csv'
+2023-09-16 10:56:16,007 - INFO - Adding task, attempting to open file
+2023-09-16 10:56:16,007 - ERROR - An error occurred: [Errno 2] No such file or directory: 'C:\\Users\\ict1\\Downloads\\symmetrical_meme-release\\symmetrical_meme-release\\../data/tasks.csv'
+2023-09-16 10:56:17,975 - INFO - Adding task, attempting to open file
+2023-09-16 10:56:17,975 - ERROR - An error occurred: [Errno 2] No such file or directory: 'C:\\Users\\ict1\\Downloads\\symmetrical_meme-release\\symmetrical_meme-release\\../data/tasks.csv'
+2023-09-16 10:56:25,343 - INFO - Deleting task, attempting to open file
+2023-09-16 10:56:25,343 - ERROR - An error occurred: [Errno 2] No such file or directory: 'C:\\Users\\ict1\\Downloads\\symmetrical_meme-release\\symmetrical_meme-release\\../data/tasks.csv'
+2023-09-16 10:57:24,878 - INFO - Logging set up successfully
+2023-09-16 10:57:24,878 - INFO - Menu is being displayed
+2023-09-16 10:57:24,894 - INFO - Menu displayed successfully
+2023-09-16 10:57:30,163 - DEBUG - User selected option 1 from the menu.
+2023-09-16 10:57:30,163 - INFO - Task is being created
+2023-09-16 10:57:36,389 - DEBUG - Task title: Test from TN
+2023-09-16 10:57:42,534 - DEBUG - Task description: Techno Ninjas 16.9.2023
+2023-09-16 10:57:48,132 - DEBUG - Task due date: 2023-09-23
+2023-09-16 10:57:49,192 - DEBUG - Task priority: 1
+2023-09-16 10:57:49,192 - DEBUG - smui.main_menu() is preparing to run smcrud.add_task()
+2023-09-16 10:57:49,192 - INFO - Adding task, attempting to open file
+2023-09-16 10:57:49,211 - ERROR - An error occured while adding task: [Errno 2] No such file or directory: 'C:\\Users\\ict1\\Downloads\\symmetrical_meme-release\\symmetrical_meme-release\\../data/tasks.csv'
+2023-09-16 10:57:49,211 - DEBUG - Execution returned to smui.main_menu()
+2023-09-16 10:57:49,211 - INFO - Task was created successfully
+2023-09-16 10:57:49,211 - INFO - Menu is being displayed
+2023-09-16 10:57:49,258 - INFO - Menu displayed successfully
+2023-09-16 11:01:40,303 - INFO - Logging set up successfully
+2023-09-16 11:01:40,303 - INFO - Menu is being displayed
+2023-09-16 11:01:40,303 - INFO - Menu displayed successfully
+2023-09-16 11:01:42,943 - DEBUG - User selected option 2 from the menu.
+2023-09-16 11:01:42,943 - INFO - Task listing in progress
+2023-09-16 11:01:42,943 - DEBUG - smui.main_menu() is preparing to run smcrud.list_tasks()
+2023-09-16 11:01:42,943 - INFO - Adding task, attempting to open file
+2023-09-16 11:01:42,943 - ERROR - An error occurred: [Errno 2] No such file or directory: 'C:\\Users\\ict1\\Downloads\\symmetrical_meme-release\\symmetrical_meme-release\\..\\data\\tasks.csv'
+2023-09-16 11:01:42,943 - INFO - Task listing completed successfully
+2023-09-16 11:01:42,943 - INFO - Menu is being displayed
+2023-09-16 11:01:42,943 - INFO - Menu displayed successfully
+2023-09-16 11:07:56,773 - INFO - Logging set up successfully
+2023-09-16 11:07:56,773 - INFO - Menu is being displayed
+2023-09-16 11:07:56,773 - INFO - Menu displayed successfully
+2023-09-16 11:08:00,008 - DEBUG - User selected option 2 from the menu.
+2023-09-16 11:08:00,008 - INFO - Task listing in progress
+2023-09-16 11:08:00,008 - DEBUG - smui.main_menu() is preparing to run smcrud.list_tasks()
+2023-09-16 11:08:00,008 - INFO - Adding task, attempting to open file
+2023-09-16 11:08:00,008 - DEBUG - Reading tasks from file
+2023-09-16 11:08:00,008 - DEBUG - File read successfully
+2023-09-16 11:08:00,008 - INFO - Tasks found, listing tasks
+2023-09-16 11:08:00,008 - ERROR - An error occurred: list index out of range
+2023-09-16 11:08:00,008 - INFO - Task listing completed successfully
+2023-09-16 11:08:00,008 - INFO - Menu is being displayed
+2023-09-16 11:08:00,008 - INFO - Menu displayed successfully
+2023-09-16 11:08:34,540 - DEBUG - User selected option 1 from the menu.
+2023-09-16 11:08:34,540 - INFO - Task is being created
+2023-09-16 11:08:36,930 - DEBUG - Task title: ok
+2023-09-16 11:08:38,243 - DEBUG - Task description: ok
+2023-09-16 11:08:45,805 - DEBUG - Task due date: 1234-05-06
+2023-09-16 11:08:47,023 - DEBUG - Task priority: 1
+2023-09-16 11:08:47,023 - DEBUG - smui.main_menu() is preparing to run smcrud.add_task()
+2023-09-16 11:08:47,023 - INFO - Adding task, attempting to open file
+2023-09-16 11:08:47,023 - DEBUG - Writing task to file
+2023-09-16 11:08:47,023 - DEBUG - File written to successfully
+2023-09-16 11:08:47,023 - INFO - Task added successfully
+2023-09-16 11:08:47,023 - DEBUG - Execution returned to smui.main_menu()
+2023-09-16 11:08:47,023 - INFO - Task was created successfully
+2023-09-16 11:08:47,023 - INFO - Menu is being displayed
+2023-09-16 11:08:47,039 - INFO - Menu displayed successfully
+2023-09-16 11:08:48,383 - DEBUG - User selected option 2 from the menu.
+2023-09-16 11:08:48,383 - INFO - Task listing in progress
+2023-09-16 11:08:48,383 - DEBUG - smui.main_menu() is preparing to run smcrud.list_tasks()
+2023-09-16 11:08:48,383 - INFO - Adding task, attempting to open file
+2023-09-16 11:08:48,383 - DEBUG - Reading tasks from file
+2023-09-16 11:08:48,383 - DEBUG - File read successfully
+2023-09-16 11:08:48,383 - INFO - Tasks found, listing tasks
+2023-09-16 11:08:48,383 - ERROR - An error occurred: list index out of range
+2023-09-16 11:08:48,383 - INFO - Task listing completed successfully
+2023-09-16 11:08:48,383 - INFO - Menu is being displayed
+2023-09-16 11:08:48,383 - INFO - Menu displayed successfully
+2023-09-16 11:10:13,757 - DEBUG - User selected option 2 from the menu.
+2023-09-16 11:10:13,757 - INFO - Task listing in progress
+2023-09-16 11:10:13,757 - DEBUG - smui.main_menu() is preparing to run smcrud.list_tasks()
+2023-09-16 11:10:13,757 - INFO - Adding task, attempting to open file
+2023-09-16 11:10:13,757 - DEBUG - Reading tasks from file
+2023-09-16 11:10:13,757 - DEBUG - File read successfully
+2023-09-16 11:10:13,757 - INFO - Tasks found, listing tasks
+2023-09-16 11:10:13,773 - INFO - Tasks listed successfully
+2023-09-16 11:10:13,773 - INFO - Task listing completed successfully
+2023-09-16 11:10:13,773 - INFO - Menu is being displayed
+2023-09-16 11:10:13,773 - INFO - Menu displayed successfully

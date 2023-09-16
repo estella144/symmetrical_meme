@@ -8,6 +8,7 @@
 
 import logging
 import smcrud as crud
+import os
 
 # Logging setup
 
