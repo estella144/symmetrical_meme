@@ -18,7 +18,7 @@ DEV_MODE = True
 
 # Data file setup
 # Determine the directory containing the script
-script_dir = os.path.dirname(sys.argv[0])
+script_dir = os.path.dirname(os.path.realpath(__file__))
 # Change the working directory to the script directory
 os.chdir(script_dir)
 if platform == "linux" or platform == "linux2":
