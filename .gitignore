@@ -162,7 +162,7 @@ cython_debug/
 data/*.csv
 logs/*.log
 # Executables
-smui-*
-smgui-*
-smui-*.exe
-smui-*.exe
+ui-*
+gui-*
+ui-*.exe
+ui-*.exe

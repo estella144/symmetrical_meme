@@ -247,4 +247,4 @@ def handle_invalid_input():
 
 if __name__ == "__main__":
     print("This file is not intended to be run directly!")
-    print("To run TaskFlow, run smui.py.")
+    print("To run TaskFlow, run ui.py.")

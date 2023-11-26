@@ -1,4 +1,4 @@
-# This file is part of Symmetrical Meme
+# This file is part of TaskFlow
 # A task management application in Python
 # v0.2.dev7 (2 Sep 2023, main/bfdf685)
 
@@ -8,7 +8,7 @@
 
 import tkinter as tk
 from tkinter import messagebox
-import smcrud as crud
+import crud as crud
 
 # Function to add a task (you'll need to implement this)
 def add_task_gui():
@@ -161,7 +161,7 @@ def delete_task_gui():
         task_id = task_id_entry.get()
 
         # Call the core function to delete the task
-        # You'll need to implement the delete_task() function in smcrud.py
+        # You'll need to implement the delete_task() function in crud.py
         crud.delete_task(task_id)
 
         # Close the delete window

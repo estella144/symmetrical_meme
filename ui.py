@@ -7,7 +7,7 @@
 # with CRUD operations for tasks, data storage, and error handling.
 
 import logging
-import smcrud as crud
+import crud as crud
 import os
 
 # Logging setup
@@ -49,13 +49,13 @@ def main_menu():
             logging.debug(f"Task due date: {due_date}")
             priority = input("Enter priority (1/2/3): ")
             logging.debug(f"Task priority: {priority}")
-            logging.debug(f"smui.main_menu() is preparing to run smcrud.add_task()")
+            logging.debug(f"ui.main_menu() is preparing to run crud.add_task()")
             crud.add_task(title, description, due_date, priority)
-            logging.debug(f"Execution returned to smui.main_menu()")
+            logging.debug(f"Execution returned to ui.main_menu()")
             logging.info(f"Task was created successfully")
         elif choice == "2":
             logging.info(f"Task listing in progress")
-            logging.debug(f"smui.main_menu() is preparing to run smcrud.list_tasks()")
+            logging.debug(f"ui.main_menu() is preparing to run crud.list_tasks()")
             crud.list_tasks(sort_by_due_date=False, sort_by_priority=False, show_reminders=True)
             logging.info(f"Task listing completed successfully")
         elif choice == "3":
@@ -70,25 +70,25 @@ def main_menu():
             logging.debug(f"New due date chosen: {new_due_date}")
             new_priority = input("Enter the new priority (1-3):")
             logging.debug(f"New priority chosen: {new_priority}")
-            logging.debug(f"smui.main_menu() is preparing to run smcrud.update_task()")
+            logging.debug(f"ui.main_menu() is preparing to run crud.update_task()")
             crud.update_task(task_index, new_title, new_description, new_due_date, new_priority)
-            logging.debug(f"Execution returned to smui.main_menu()")
+            logging.debug(f"Execution returned to ui.main_menu()")
             logging.info(f"Task was updated successfully")
         elif choice == "4":
             logging.info(f"Task is being deleted")
             task_index = int(input("Enter the task index to delete: "))
             logging.info(f"Task index to delete: {task_index}")
-            logging.debug(f"smui.main_menu() is preparing to run smcrud.delete_task()")
+            logging.debug(f"ui.main_menu() is preparing to run crud.delete_task()")
             crud.delete_task(task_index)
-            logging.debug(f"Execution returned to smui.main_menu()")
+            logging.debug(f"Execution returned to ui.main_menu()")
             logging.info(f"Task was deleted successfully")
         elif choice == "5":
             logging.info(f"Task search in progress")
             keyword = input("Enter a keyword to search for: ")
             logging.info(f"Keyword: {keyword}")
-            logging.debug(f"smui.main_menu() is preparing to run smcrud.search_tasks())")
+            logging.debug(f"ui.main_menu() is preparing to run crud.search_tasks())")
             crud.search_tasks(keyword)
-            logging.debug(f"Execution returned to smui.main_menu()")
+            logging.debug(f"Execution returned to ui.main_menu()")
             logging.info(f"Search successful")
         elif choice == "6":
             logging.info(f"Quitting in progress")

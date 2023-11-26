@@ -1,4 +1,4 @@
-# This file is part of Symmetrical Meme
+# This file is part of TaskFlow
 # A task management application in Python
 # v0.3 (3 Sep 2023, main/79fddc2)
 
@@ -8,11 +8,11 @@
 
 import tkinter as tk
 from tkinter import messagebox
-from smgui_interface import add_task_gui, list_tasks_gui, update_task_gui, delete_task_gui, search_tasks_gui
+from gui_interface import add_task_gui, list_tasks_gui, update_task_gui, delete_task_gui, search_tasks_gui
 
 # Create the main application window
 root = tk.Tk()
-root.title("Symmetrical Meme")
+root.title("TaskFlow")
 
 def quit_application():
     root.destroy()  # Close the main application window
